@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 URL Shortener
+  p User Stories:
+  ul
+    li I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+    li When I visit that shortened URL, it will redirect me to my original link.
+  
+  h2 Example creation useage:
+  p 
+  code https://serene-woodland-24309.herokuapp.com/dev/https://www.freecodecamp.com
+  p 
+  code https://serene-woodland-24309.herokuapp.com/dev/SyzVw1EBg
+  
+  h2 Example creation output:
+  code {"original_url": "https://www.freecodecamp.com", "short_url": "https://serene-woodland-24309.herokuapp.com/dev/SyzVw1EBg"}
+  
+  h2 Useage:
+  code https://serene-woodland-24309.herokuapp.com/dev/SyzVw1EBg
+  
+  
+  h2: Will direct to:
+  code https://www.freecodecamp.com
